@@ -1,0 +1,80 @@
+@mixin background ($url) {
+    background: $url;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 3rem; 
+}
+
+.row {
+    display: flex;
+}
+
+.soundboard-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    border: 5px solid black;
+}
+.sound {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: 25px;
+    transition: 300ms ease-in;
+    &:hover {
+        box-shadow: 25px 25px 10px yellow;
+    }
+}
+
+.sound1 {
+    @include background(url(../assets/jake.jpg));
+}
+
+.sound2 {
+    @include background(url(../assets/terry.jpg));
+}
+
+.sound3 {
+    @include background(url(../assets/holdt.jpg));
+}
+
+.sound4 {
+    @include background(url(../assets/rosa.jpg));
+}
+
+.sound5{
+    @include background(url(../assets/boyle.jpg));
+}
+
+.sound6 {
+    @include background(url(../assets/gina.jpg));
+}
+
+.sound7 {
+    @include background(url(../assets/hitchcock.jpg))
+}
+
+.sound8 {
+    @include background(url(../assets/scully.jpg))
+}
+
+.sound9 {
+    @include background(url(../assets/amy.jpg))
+}
+
