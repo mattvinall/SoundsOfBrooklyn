@@ -3,66 +3,78 @@
         //create array of Jake quotes (mp3)
         const soundBite = {
             jake : [
-                'sounds/Jake-breakfastBurrito.mp3',
-                'sounds/Jake-backstreetBoys.mp3',
-                'sounds/Jake-littleSpoon.mp3',
-                'sounds/Jake-guitar.mp3',
-                'sounds/Jake-coolCoolCool.mp3'
+                'sounds/jake-breakfastBurrito.mp3',
+                'sounds/jake-backstreetBoys.mp3',
+                'sounds/jake-chills.mp3',
+                'sounds/jake-littleSpoon.mp3',
+                'sounds/jake-cool.mp3'
             ],
              // array for terry quotes
              terry : [
-                'sounds/Terry-Yogurt.mp3',
-                'sounds/Terry-brains.mp3',
-                'sounds/Terry-ebonyFalcon.mp3',
-                'sounds/Terry-farts.mp3',
-                'sounds/Terry-lovesLavendar.mp3'
+                'sounds/terry-yogurt.mp3',
+                'sounds/terry-brains.mp3',
+                'sounds/terry-ebonyFalcon.mp3',
+                'sounds/terry-yogurt2.mp3',
+                'sounds/lavendar.mp3'
             ],
              // array for holdt quotes
             holdt : [
-                'sounds/Holdt-deathThreat.mp3',
-                'sounds/Holdt-adrenaline.mp3',
-                'sounds/Holdt-breasts.mp3',
-                'sounds/Holdt-favJoke.mp3',
-                'sounds/Holdt-thirsty.mp3',
-                'sounds/Holdt-twitter.mp3'
+                'sounds/holdt-adrenaline.mp3',
+                'sounds/holdt-breasts.mp3',
+                'sounds/hold-humanMale.mp3'
+                'sounds/holdt-joke.mp3',
+                'sounds/hold-joke2.mp3',
+                'sounds/holdt-smile.mp3'
+                'sounds/holdt-thirsty.mp3',
+                'sounds/holdt-twitter.mp3'
             ],
              // array for rosa quotes
              rosa : [
-                'sounds/Rosa-badass.mp3',
-                'sounds/Rosa-funny.mp3',
-                'sounds/Rosa-garbage.mp3',
-                'sounds/Rosa-sorry.mp3',
-                'sounds/Rosa-wheresMyFile.mp3'
+                'sounds/rosa-badass.mp3',
+                'sounds/rosa-funny.mp3',
+                'sounds/rosa-garbage.mp3',
+                'sounds/rosa-sorry.mp3',
+                'sounds/rosa-file.mp3'
             ],
              // array for Boyle quotes
              boyle : [
-                'sounds/Boyle-checkOutThisKaboose.mp3',
-                'sounds/Boyle-BM.mp3',
-                'sounds/Boyle-getMyLadyOff.mp3',
-                'sounds/Boyle-STDs.mp3',
-                'sounds/Boyle-turkeyStock.mp3'
+                'sounds/boyle-kaboose.mp3',
+                'sounds/boyle-bestman.mp3',
+                'sounds/boyle-wheastinfection.mp3',
+                'sounds/boyle-STD.mp3',
+                'sounds/boyle-turkeyStock.mp3'
             ],
              // array for Gina quotes
              gina : [
-                'sounds/Gina-bloodlust.mp3',
-                'sounds/Gina-100emoji.mp3',
-                'sounds/Gina-highHorse.mp3',
-                'sounds/Gina-notToBrag.mp3',
-                'sounds/Gina-spaceheater'
+                'sounds/gina-bloodlust.mp3',
+                'sounds/gina-100emoji.mp3',
+                'sounds/gina-keepUp.mp3',
+                'sounds/gina-notToBrag.mp3',
+                'sounds/gina-solveysolve.mp3'
+                'sounds/gina-notToBrag.mp3',
+                'sounds/gina-spaceheater'
             ],
             // array for Amy quotes
             amy : [
-                'sounds/Amy-dogs.mp3',
-                'sounds/Amy-faily.mp3',
-                'sounds/Amy-themThangs.mp3',
-                'sounds/Amy-drink5.mp3',
-                'sounds/Amy-waddupBro.mp3'
+                'sounds/amy-dog.mp3',
+                'sounds/amy-fail.mp3',
+                'sounds/amy-cover.mp3',
+                'sounds/amy-drink5.mp3',
+                'sounds/amy-waddupBro.mp3'
             ],
             skully : [
-                'sounds/Skully-food.mp3'
+                'sounds/skully-food.mp3',
+                'sounds/skully-burrito.mp3',
+                'sounds/skully-cookiePizza.mp3',
+                'sounds/skully-dietPills.mp3',
+                'sounds/skully-dontKnowMe.mp3'
             ],
             hitchcock : [
-                'sounds/Hitchcock-getWokeSkully.mp3'
+                'sounds/Hitchcock-getWokeSkully.mp3',
+                'sounds/Hitchcock-14arrests.mp3',
+                'sounds/Hitchcock-snowflake.mp3',
+                'sounds/Hitchcock-broCode.mp3',
+                'sounds/Hitchcock-food.mp3',
             ]
         }
 
