@@ -15,36 +15,30 @@
             <h2>Keep Calm and Holdt On</h2>
         </div>
 
-
         <div class="soundboard-container wrapper">
-            <div class="row row1 wrapper">
-                <div class= "sound sound1">
-                    <p>Jake</p>
-                </div>
-                <div class="sound sound2">
-
-                </div>
-                <div class="sound sound3">
-
-                </div>
+            <div class="row row1">
+                <div class= "sound sound1" id="jake" onclick='audioPlay("jake")'></div>
+                <div class="sound sound2" id="terry" onclick='audioPlay("terry")'></div>
+                <div class="sound sound3" id="holdt" onclick='audioPlay("holdt")'></div>
             </div>
-            <div class="row row2 wrapper">
-                <div class="sound sound4">
-
-                </div>
-                <div class="sound sound5">
-
-                </div>
-                <div class="sound sound6">
-
-                </div>
+            <div class="row row2">
+                <div class="sound sound4" id="rosa" onclick='audioPlay("rosa")'></div>
+                <div class="sound sound5" id="boyle" onclick='audioPlay("boyle")'></div>
+                <div class="sound sound6" id="gina" onclick='audioPlay("gina")'></div>
             </div>
-            <div class="row row3 wrapper">
-                <div class="sound sound7"></div>
-                <div class="sound sound8"></div>
-                <div class="sound sound9"></div>
+            <div class="row row3">
+                <div class="sound sound7" id="hitchcock" onlick='audioPlay("hitchcock")'></div>
+                <div class="sound sound8" id="scully" onlick='audioPlay("scully")'></div>
+                <div class="sound sound9" id="amy" onlick='audioPlay("amy")'></div>
             </div>
         </div>
     </section>
+    <!-- Audio Section -->
+    <section>
+        <audio src="sounds/Jake-coolCoolCool.mp3" id="quote"></audio>
+    </section>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
