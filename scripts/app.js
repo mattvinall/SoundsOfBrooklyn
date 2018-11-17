@@ -70,10 +70,11 @@
         //set variable outside of scope so that we can avoid scoping issue
         let isplaying = false;
 
+        // create function 
         function audioPlay(name) {
             let player = document.getElementById('quote');
             let randomQuote = soundBite[name][Math.floor(Math.random() * soundBite[name].length)];
-
+            // created if statement to play or pause the audio
             if (!isplaying) {
                 player.src = randomQuote;
                 player.play();  
@@ -85,20 +86,6 @@
                 isplaying = false;
             }
         }
-
-
-
-
-
-    // Create function that will play a random quote from the character array 
-    
-    // When user clicks on character - play the randomized quote
-    
-    // switch the SRC attribute dynamically?
-
-    // When user clicks another character, stop playing that clip and play the other 
-
-    //
 
 
 
