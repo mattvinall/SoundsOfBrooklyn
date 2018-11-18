@@ -12,6 +12,10 @@ body {
   max-width: 80%;
   margin: 0 auto; }
 
+@media screen and (max-width: 560px) {
+  .wrapper {
+    max-width: 90%; } }
+
 /* SETUP STYLING STARTS */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -196,6 +200,10 @@ p.footer-text {
   margin: 50px 0 0 0;
   font-weight: 700; }
 
+@media screen and (max-width: 560px) {
+  p.footer-text {
+    margin: 25px 0 0 0; } }
+
 .logo {
   max-width: 400px; }
 
@@ -312,3 +320,24 @@ p.footer-text {
   height: 150px;
   width: 150px;
   border-radius: 50%; }
+
+@media screen and (max-width: 560px) {
+  .soundboard-container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+@media screen and (max-width: 465px) {
+  .logo {
+    max-width: 90%; } }

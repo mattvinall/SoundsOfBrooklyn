@@ -74,3 +74,22 @@
     @include background(url(../assets/amy.jpg))
 }
 
+// MEDIA QUERIES
+
+@media screen and (max-width: 560px) {
+    .soundboard-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .logo {
+        max-width:90%;
+    }
+}
+

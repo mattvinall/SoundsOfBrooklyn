@@ -37,3 +37,9 @@ p.footer-text {
     margin: 50px 0 0 0;
     font-weight: 700;
 }
+
+@media screen and (max-width: 560px) {
+    p.footer-text {
+        margin: 25px 0 0 0;
+    }
+}
