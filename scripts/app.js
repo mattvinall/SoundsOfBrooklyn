@@ -77,8 +77,6 @@
                 'sounds/hitchcock-food.mp3'
             ]
         }
-
-
         //set variable outside of scope so that we can avoid scoping issue
         let isPlaying = false; //initial state is not playing
         let characterTracker; //keep track of latest character
@@ -93,22 +91,18 @@
                 player.pause();
                 // is paused
                 isPlaying = false;
-                console.log('trying to pause', characterTracker);
-
             } else if (characterTracker === name && !isPlaying){
                 //want player to play
                 player.src = randomQuote; //went into player object and got the key of src and reassigned it to randomQuote
                 player.play();
-                console.log('trying to play', characterTracker);
                 //is playing
                 isPlaying = true;
             } else if (characterTracker !== name) {
                 // play different character that user clicked
-                player.src = randomQuote;
+                player.src = randomQuote; 
                 player.play();
                 isPlaying = true;
-                characterTracker = name;
-                console.log('someone new', characterTracker);
+                characterTracker = name; //updated name
             }
         }
 
