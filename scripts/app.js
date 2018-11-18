@@ -1,7 +1,6 @@
-    //create object that holds all character arrays
-    // const characterQuotes  = {
-        //create array of Jake quotes (mp3)
+        //create object that holds all character arrays
         const soundBite = {
+            // array for jake quotes
             jake : [
                 'sounds/jake-breakfastBurrito.mp3',
                 'sounds/jake-backstreetBoys.mp3',
@@ -12,20 +11,20 @@
              // array for terry quotes
              terry : [
                 'sounds/terry-yogurt.mp3',
-                'sounds/terry-brains.mp3',
                 'sounds/terry-ebonyFalcon.mp3',
                 'sounds/terry-yogurt2.mp3',
-                'sounds/lavendar.mp3'
+                'sounds/terry-lavendar.mp3',
+                'sounds/terry-brains.mp3'
             ],
              // array for holdt quotes
             holdt : [
                 'sounds/holdt-adrenaline.mp3',
                 'sounds/holdt-breasts.mp3',
-                'sounds/hold-humanMale.mp3'
+                'sounds/holdt-humanMale.mp3',
                 'sounds/holdt-joke.mp3',
-                'sounds/hold-joke2.mp3',
-                'sounds/holdt-smile.mp3'
-                'sounds/holdt-thirsty.mp3',
+                'sounds/holdt-joke2.mp3',
+                'sounds/holdt-smile.mp3',
+                'sounds/holdt-thirtsy.mp3',
                 'sounds/holdt-twitter.mp3'
             ],
              // array for rosa quotes
@@ -42,7 +41,7 @@
                 'sounds/boyle-bestman.mp3',
                 'sounds/boyle-wheastinfection.mp3',
                 'sounds/boyle-STD.mp3',
-                'sounds/boyle-turkeyStock.mp3'
+                'sounds/boyle-turkeystock.mp3'
             ],
              // array for Gina quotes
              gina : [
@@ -50,9 +49,8 @@
                 'sounds/gina-100emoji.mp3',
                 'sounds/gina-keepUp.mp3',
                 'sounds/gina-notToBrag.mp3',
-                'sounds/gina-solveysolve.mp3'
+                'sounds/gina-solveysolve.mp3',
                 'sounds/gina-notToBrag.mp3',
-                'sounds/gina-spaceheater'
             ],
             // array for Amy quotes
             amy : [
@@ -62,6 +60,7 @@
                 'sounds/amy-drink5.mp3',
                 'sounds/amy-waddupBro.mp3'
             ],
+            // array for Skully quotes
             skully : [
                 'sounds/skully-food.mp3',
                 'sounds/skully-burrito.mp3',
@@ -69,33 +68,47 @@
                 'sounds/skully-dietPills.mp3',
                 'sounds/skully-dontKnowMe.mp3'
             ],
+            // array for hitchcock quotes
             hitchcock : [
-                'sounds/Hitchcock-getWokeSkully.mp3',
-                'sounds/Hitchcock-14arrests.mp3',
-                'sounds/Hitchcock-snowflake.mp3',
-                'sounds/Hitchcock-broCode.mp3',
-                'sounds/Hitchcock-food.mp3',
+                'sounds/hitchcock-getWokeSkully.mp3',
+                'sounds/hitchcock-14arrests.mp3',
+                'sounds/hitchcock-snowflake.mp3',
+                'sounds/hitchcock-broCode.mp3',
+                'sounds/hitchcock-food.mp3'
             ]
         }
 
 
         //set variable outside of scope so that we can avoid scoping issue
-        let isplaying = false;
-
+        let isPlaying = false; //initial state is not playing
+        let characterTracker; //keep track of latest character
         // create function 
         function audioPlay(name) {
+            // create variable that references the id of quote in the audio element and will dynamically change the src on click
             let player = document.getElementById('quote');
             let randomQuote = soundBite[name][Math.floor(Math.random() * soundBite[name].length)];
-            // created if statement to play or pause the audio
-            if (!isplaying) {
-                player.src = randomQuote;
-                player.play();  
-                // is playing
-                isplaying = true;    
-            } else {
+
+            if (characterTracker === name && isPlaying) {
+                //want player to pause
                 player.pause();
                 // is paused
-                isplaying = false;
+                isPlaying = false;
+                console.log('trying to pause', characterTracker);
+
+            } else if (characterTracker === name && !isPlaying){
+                //want player to play
+                player.src = randomQuote; //went into player object and got the key of src and reassigned it to randomQuote
+                player.play();
+                console.log('trying to play', characterTracker);
+                //is playing
+                isPlaying = true;
+            } else if (characterTracker !== name) {
+                // play different character that user clicked
+                player.src = randomQuote;
+                player.play();
+                isPlaying = true;
+                characterTracker = name;
+                console.log('someone new', characterTracker);
             }
         }
 
