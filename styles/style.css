@@ -2,7 +2,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Impact';
   text-transform: uppercase;
   text-align: center;
   background: #5480d1;
@@ -163,8 +163,23 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 h1 {
   font-size: 5rem;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: yellow;
+  font-weight: 400;
+  margin: 0; }
+
+h2 {
+  margin: 10px; }
+
+p.character {
+  position: relative;
+  top: 125px;
+  color: #fff;
+  font-size: 2.5rem;
+  margin: 20px; }
+
+.logo {
+  max-width: 400px; }
 
 h2 {
   font-size: 3rem; }
@@ -199,12 +214,14 @@ h2 {
   justify-content: center;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 5px solid black;
   margin: 25px;
   -webkit-transition: 300ms ease-in;
   -o-transition: 300ms ease-in;
-  transition: 300ms ease-in; }
+  transition: 300ms ease-in;
+  -webkit-box-shadow: 10px -10px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px -10px rgba(0, 0, 0, 0.6); }
   .sound:hover {
     -webkit-box-shadow: 25px 25px 10px yellow;
     box-shadow: 25px 25px 10px yellow; }

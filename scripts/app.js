@@ -77,9 +77,10 @@
                 'sounds/hitchcock-food.mp3'
             ]
         }
-        //set variable outside of scope so that we can avoid scoping issue
+       
         let isPlaying = false; //initial state is not playing
         let characterTracker; //keep track of latest character
+        let timeTracker; // keeps track of current audio time 
         // create function 
         function audioPlay(name) {
             // create variable that references the id of quote in the audio element and will dynamically change the src on click
@@ -89,20 +90,25 @@
             if (characterTracker === name && isPlaying) {
                 //want player to pause
                 player.pause();
+                timeTracker = player.currentTime; //set track of current time
+                // player.currentTime
                 // is paused
                 isPlaying = false;
+                console.log('is paused', timeTracker, characterTracker)
             } else if (characterTracker === name && !isPlaying){
-                //want player to play
-                player.src = randomQuote; //went into player object and got the key of src and reassigned it to randomQuote
+                // need to know last audio time
+                player.currentTime = timeTracker;
                 player.play();
                 //is playing
                 isPlaying = true;
+                console.log('is playing same', timeTracker, characterTracker)
             } else if (characterTracker !== name) {
                 // play different character that user clicked
                 player.src = randomQuote; 
                 player.play();
                 isPlaying = true;
                 characterTracker = name; //updated name
+                console.log('is playing someone new', timeTracker, characterTracker)
             }
         }
 

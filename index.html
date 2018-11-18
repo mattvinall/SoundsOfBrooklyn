@@ -11,33 +11,58 @@
 <body>
     <section>
         <div class="wrapper">
-            <h1>Sounds of Brooklyn</h1>
+            <h1>Sounds of <img src="assets/Brooklyn_nine-nine_logo.png" alt="brooklyn 99 logo" class="logo"></h1>
             <h2>Keep Calm and Holdt On</h2>
         </div>
 
+        <!-- SOUNDBOARD -->
         <div class="soundboard-container wrapper">
             <div class="row row1">
-                <div class= "sound sound1" id="jake" onclick='audioPlay("jake")'></div>
-                <div class="sound sound2" id="terry" onclick='audioPlay("terry")'></div>
-                <div class="sound sound3" id="holdt" onclick='audioPlay("holdt")'></div>
+                <div class= "sound sound1" id="jake" onclick='audioPlay("jake")'>
+                    <div>
+                        <p class="character">Jake</p>
+                    </div>
+                </div>
+                <div class="sound sound2" id="terry" onclick='audioPlay("terry")'>
+                    <p class="character">Terry</p>
+                </div>
+                <div class="sound sound3" id="holdt" onclick='audioPlay("holdt")'>
+                    <p class="character">Holdt</p>
+                </div>
             </div>
             <div class="row row2">
-                <div class="sound sound4" id="rosa" onclick='audioPlay("rosa")'></div>
-                <div class="sound sound5" id="boyle" onclick='audioPlay("boyle")'></div>
-                <div class="sound sound6" id="gina" onclick='audioPlay("gina")'></div>
+                <div class="sound sound4" id="rosa" onclick='audioPlay("rosa")'>
+                    <p class="character">Rosa</p>
+                </div>
+                <div class="sound sound5" id="boyle" onclick='audioPlay("boyle")'>
+                    <p class="character">Boyle</p>
+                </div>
+                <div class="sound sound6" id="gina" onclick='audioPlay("gina")'>
+                    <p class="character">Gina</p>
+                </div>
             </div>
             <div class="row row3">
-                <div class="sound sound7" id="hitchcock" onclick='audioPlay("hitchcock")'></div>
-                <div class="sound sound8" id="scully" onclick='audioPlay("skully")'></div>
-                <div class="sound sound9" id="amy" onclick='audioPlay("amy")'></div>
+                <div class="sound sound7" id="hitchcock" onclick='audioPlay("hitchcock")'>
+                    <p class="character">Hitchcock</p>
+                </div>
+                <div class="sound sound8" id="scully" onclick='audioPlay("skully")'>
+                    <p class="character">Skully</p>
+                </div>
+                <div class="sound sound9" id="amy" onclick='audioPlay("amy")'>
+                    <p class="character">Amy</p>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Audio Section -->
+    <!-- SOUNDBOARD ENDS -->
+
+    <!-- AUDIO -->
     <section>
         <audio src="sounds/Jake-coolCoolCool.mp3" id="quote"></audio>
     </section>
+    <!-- AUDIO ENDS -->
 
+    <!-- SCRIPTS -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="./scripts/app.js"></script>
 </body>
