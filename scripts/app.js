@@ -83,32 +83,26 @@
         let timeTracker; // keeps track of current audio time 
         // create function 
         function audioPlay(name) {
-            // create variable that references the id of quote in the audio element and will dynamically change the src on click
+            // create variable that gets the ID of quote in the audio element and will dynamically change the src on click
             let player = document.getElementById('quote');
             let randomQuote = soundBite[name][Math.floor(Math.random() * soundBite[name].length)];
 
             if (characterTracker === name && isPlaying) {
-                //want player to pause
                 player.pause();
                 timeTracker = player.currentTime; //set track of current time
-                // player.currentTime
-                // is paused
                 isPlaying = false;
-                console.log('is paused', timeTracker, characterTracker)
             } else if (characterTracker === name && !isPlaying){
-                // need to know last audio time
                 player.currentTime = timeTracker;
+                player.src = randomQuote;
                 player.play();
-                //is playing
                 isPlaying = true;
-                console.log('is playing same', timeTracker, characterTracker)
+                console.log(randomQuote, 'its working');
             } else if (characterTracker !== name) {
                 // play different character that user clicked
                 player.src = randomQuote; 
                 player.play();
                 isPlaying = true;
                 characterTracker = name; //updated name
-                console.log('is playing someone new', timeTracker, characterTracker)
             }
         }
 

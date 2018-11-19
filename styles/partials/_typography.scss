@@ -4,20 +4,15 @@ h1 {
     text-transform: uppercase;
     color: yellow;
     font-weight: 400;
-    margin: 10px;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
     font-size: 3rem;
     margin: 10px;
-}
-
-p.character {
-    position: relative;
-    top: 125px;
-    color: #fff;
-    font-size: 2.5rem;
-    margin: 20px;
 }
 
 a {
@@ -28,15 +23,27 @@ a {
     font-family: 'Impact';
     &:hover {
         font-size:2rem;
+        color: yellow;
     }
 }
 
-p.footer-text {
-    font-size: 1.5rem;
-    font-family: 'Helvetica 86';
-    margin: 50px 0 0 0;
-    font-weight: 700;
+p.character {
+    position: absolute;
+    top: 125px;
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 20px;
 }
+
+footer p {
+    font-size: 1.2rem;
+    font-family: 'Helvetica 86';
+    margin: 50px 0;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+// MEDIA QUERIES
 
 @media screen and (max-width: 560px) {
     p.footer-text {

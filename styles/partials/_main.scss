@@ -21,20 +21,22 @@
     align-items: center;
     margin-top: 10px;
     max-width: 80%;
-}
-.sound {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    border: 5px solid black;
-    margin: 20px;
-    transition: 300ms ease-in;
-    box-shadow: 10px -10px rgba(0,0,0,0.8);
-    &:hover {
-        box-shadow: none; //simulates click on button
+    & .sound {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        cursor: pointer;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        border: 5px solid black;
+        margin: 20px;
+        transition: 300ms ease-in;
+        box-shadow: 10px -10px rgba(0,0,0,0.8);
+        &:hover {
+            box-shadow: none; //simulates click on button
+        }
     }
 }
 
@@ -75,6 +77,9 @@
 }
 
 // MEDIA QUERIES
+@media screen and (min-width: 805px) and (max-width: 1690px) {
+
+}
 
 @media screen and (max-width: 560px) {
     .soundboard-container {
