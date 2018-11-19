@@ -193,7 +193,7 @@ h2 {
   margin: 10px; }
 
 a {
-  color: #fff;
+  color: #000;
   font-size: 1.5rem;
   text-decoration: none;
   -webkit-transition: 300ms ease-in-out;
@@ -216,7 +216,9 @@ footer p {
   font-family: 'Helvetica 86';
   margin: 50px 0;
   font-weight: 700;
-  margin: 15px 0; }
+  margin: 5px 0;
+  text-align: right;
+  padding-right: 50px; }
 
 @media screen and (max-width: 560px) {
   p.footer-text {

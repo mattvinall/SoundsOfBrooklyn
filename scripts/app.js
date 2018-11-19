@@ -88,15 +88,14 @@
             let randomQuote = soundBite[name][Math.floor(Math.random() * soundBite[name].length)];
 
             if (characterTracker === name && isPlaying) {
-                player.pause();
+                player.pause(); //want player to pause on click
                 timeTracker = player.currentTime; //set track of current time
-                isPlaying = false;
+                isPlaying = false; 
             } else if (characterTracker === name && !isPlaying){
                 player.currentTime = timeTracker;
                 player.src = randomQuote;
                 player.play();
                 isPlaying = true;
-                console.log(randomQuote, 'its working');
             } else if (characterTracker !== name) {
                 // play different character that user clicked
                 player.src = randomQuote; 
